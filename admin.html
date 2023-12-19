@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roster</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg,white , black);
+        }
+
+        header {
+            display: flex;
+            background-color: darkslategray;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        header img {
+            max-height: 50px;
+            margin-right: 10px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            padding: 15px;
+            margin: 20px 0;
+            background-color: darkslategray;
+            border-radius: 5px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 15px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        nav a:hover {
+            background-color: gray;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            justify-content: space-around;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .roster-card {
+            width: 300px;
+            height: 550px;
+            background-color: white;
+            border-radius: 10px;
+            margin: 15px;
+            box-shadow: 0 0 10px black;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            perspective: 1000px;
+            cursor: pointer;
+        }
+        .roster-front {
+            transform: rotateY(0deg);
+        }
+
+        .roster-back {
+            transform: rotateY(180deg);
+        }
+
+        .roster-img {
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .roster-details {
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            font-size: 15px;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        h2, p {
+            margin: 0;
+            font-size: 15px;
+        }
+        .bio {text-align: left  ;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: darkslategray;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="LOGO/R.png" alt="">
+            <img src="LOGO/CIT.png" alt="">
+        </div>
+        <h1>COLLEGE OF INDUSTRIAL TECHNOLOGY</h1>
+        <nav>
+            <a href="family.html">PROGRAM COORDINATOR</a>
+            <a href="home.html">HOME</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="roster-card">
+            <div class="roster-inner">
+                <div class="roster-front">
+                    <img class="roster-img" src="/admin/pacis.jpg">
+                    <div class="roster-details">
+                        <h2>Dr. CESARIO Y. PACIS</h2>
+                        <p>Dean</p>
+                        <p>Email Address: cestar88@yahoo.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="roster-card">
+            <div class="roster-inner">
+                <div class="roster-front">
+                    <img class="roster-img" src="/admin/aldous.jpg ">
+                    <div class="roster-details">
+                        <h2>Prof. ALDOUS dV. ASUNCION</h2>
+                        <p>	College Secretary</p>
+                        <p>Email Address: aldous.cit.mmsu@gmail.com</p>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="roster-card">
+            <div class="roster-inner">
+                <div class="roster-front">
+                    <img class="roster-img" src="/admin/hallar.jpg">
+                    <div class="roster-details">
+                        <h2>Dr. BYRON JOSEPH A. HALLAR</h2>
+                        <p>	Department Chair, Industrial Tech.</p>
+                        <p>Email Address: bjahallar@mmsu.edu.ph</p>        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="roster-card">
+            <div class="roster-inner">
+                <div class="roster-front">
+                    <img class="roster-img" src="/admin/huenda.jpg">
+                    <div class="roster-details">
+                        <h2>Prof. FERDINAND P. HUENDA</h2>
+                        <p>	Department Chair, Industrial Tech.</p>
+                        <p>Email Address: ferdinandhuenda@yahoo.com</p>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="roster-card">
+            <div class="roster-inner">
+                <div class="roster-front">
+                    <img class="roster-img" src="/admin/unknown girl.jpg">
+                    <div class="roster-details">
+                        <h2>Prof. NOVA M. CABIAS</h2>
+                        <p>	Department Chair, Industrial Tech.</p>
+                        <p>Email Address: novamateo@yahoo.com</p>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="roster-card">
+            <div class="roster-inner">
+                <div class="roster-front">
+                    <img class="roster-img" src="/admin/guillen.jpg">
+                    <div class="roster-details">
+                    <h2>Mr. CHRISTIAN JADE D. GUILLEN</h2>
+                    <p>	Coordinator, Planning & Development</p>
+                    <p>Email Address: jade.ilocos@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="roster-card">
+            <div class="roster-inner">
+                <div class="roster-front">
+                    <img class="roster-img" src="/admin/unknown girl.jpg">
+                    <div class="roster-details">
+                        <h2>Ms. CHRISTINE Q. BAÑEZ	</h2>
+                        <p>	Coordinator, College Research</p>
+                        <p>Email Address: N/A</p>
+                    </div>
+                </div>
+                <div class="roster-back">
+                    <div class="roster-details">
+                        <h2>Ms. CHRISTINE Q. BAÑEZ</h2>
+                        <p><strong>BIO DATA</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="roster-card">
+            <div class="roster-inner">
+                <div class="roster-front">
+                    <img class="roster-img" src="/admin/domingo.jpg">
+                    <div class="roster-details">
+                        <h2>Prof. FAIRIE ANNE A. DOMINGO	</h2>
+                        <p>	Coordinator, College Extension</p>
+                        <p>Email Address: f.acebedo16@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="roster-card">
+            <div class="roster-inner">
+                <div class="roster-front">
+                    <img class="roster-img" src="/admin/rabago.JPG">
+                    <div class="roster-details">
+                        <h2> Mr. JERYLVIN A. RABAGO	</h2>
+                        <p>	Coordinator, Student Affairs & Services</p>
+                        <p>Email Address: mr.popcap@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="roster-card">
+            <div class="roster-inner">
+                <div class="roster-front">
+                    <img class="roster-img" src="/admin/baniaga.jpg">
+                    <div class="roster-details">
+                        <h2>Prof. RAYMUND R. BANIAGA	</h2>
+                        <p>Coordinator, On-the-Job Training.</p>
+                        <p>Email Address: raybani2@@yahoo.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &COPY JUSTINE MHEL D. SAOIT
+    </footer>
+</body>
+</html>
